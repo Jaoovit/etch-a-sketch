@@ -2,7 +2,7 @@
 
 pseudocode: Create a etch-a-sketch to draw using single or random colors.
 
-1 - Create a HTML document with:
+1 - Create a HTML document with: [x]
     a header "eatc-a-sketch [x]
     a footer [x]
     a div: to receive the another divs [x]
@@ -13,9 +13,9 @@ pseudocode: Create a etch-a-sketch to draw using single or random colors.
         3º - paint the square with the same color of the background when click [x]
         4º - paint all squares with the same color of the background when click
         [x]
-        5º - a slide button that change the number os the divs in the main div, ex: 1x1; 2x2; 3x3...
+        5º - a slide button that change the number os the divs in the main div, ex: 1x1; 2x2; 3x3... [x]
 
-2 - Create a global CSS document
+2 - Create a global CSS document [x]
 
 3 - Create a JavaScript document with:
     a function to add divis in the main div using the 5º button
