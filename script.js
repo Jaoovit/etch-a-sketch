@@ -13,8 +13,11 @@ function slideControl() {
 
 slideControl()
 
-let squareToSquares = document.querySelector('#squaretosquares')
-let square = document.createElement('div')
-square.innerText = 'square' 
 
-document.squareToSquares.appendChield(square)
+let squareToSquares = document.querySelector('#squaretosquares'); console.log(squareToSquares)
+let square = document.createElement('div'); console.log(square)
+square.innerText = 'square'
+
+squareToSquares.appendChield(square);
+
+
