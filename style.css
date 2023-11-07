@@ -57,9 +57,13 @@ button {
     gap: 10px;
 }
 
-.squaretosquares {
+.grid {
+    display: grid;
     background-color: white;
+    grid-template-rows: repeat(16, 1fr);
+    grid-template-columns: repeat(16, 1fr);
     height: 300px;
     width: 300px;
     box-shadow: 5px 5px 2px gray;
 }
+
