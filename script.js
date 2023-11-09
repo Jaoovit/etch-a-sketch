@@ -7,8 +7,8 @@ function slideControl() {
     
     slide.addEventListener('input', (event) => {
         show.textContent = event.target.value + " X " + event.target.value
-        
         incriseSquare(event.target.value)
+        
     })
     
 }
@@ -16,18 +16,17 @@ function slideControl() {
 slideControl()
 
 
-function incriseSquare(slideValue) {
-    console.log(slideValue)
+function incriseSquare(size) {
     let grid = document.querySelector('#grid');
+    grid.style.gridTemplateRows = `repeat(${size}, 1fr)`;
+    grid.style.gridTemplateColumns = `repeat(${size}, 1fr)`;
 
-    for (let i = 0; i < slideValue; i++) {
-        for (let j = 0; j < slideValue; j++) {
+    for (let i = 0; i < size * size; i++) {
             let cell = document.createElement('div');
-            cell.classList.add('cell');
             grid.appendChild(cell);
         }
     }
-}
+
 
 
 
