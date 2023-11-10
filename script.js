@@ -27,6 +27,36 @@ function incriseSquare(size) {
         }
     }
 
+let colorBtn = document.querySelector('#color')
+let rainbowBtn = document.querySelector('#rainbow')
+let eraseBtn = document.querySelector('#erase')
+let clear = document.querySelector('#clean')
+
+colorBtn.addEventListener('click', function onClick(event) {
+     event.target.style.backgroundColor = 'gray';
+     event.target.style.color = 'white';
+     event.target.style.borderColor = 'white';
+})
+
+rainbowBtn.addEventListener('click', function onClick(event) {
+    event.target.style.backgroundColor = 'gray';
+    event.target.style.color = 'white';
+    event.target.style.borderColor = 'white';
+})
+
+eraseBtn.addEventListener('click', function onClick(event) {
+    event.target.style.backgroundColor = 'gray';
+    event.target.style.color = 'white';
+    event.target.style.borderColor = 'white';
+})
+
+clear.addEventListener('click', function onClick(event) {
+    event.target.style.backgroundColor = 'gray';
+    event.target.style.color = 'white';
+    event.target.style.borderColor = 'white';
+})
+
+
 
 
 
