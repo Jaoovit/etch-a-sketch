@@ -31,27 +31,29 @@ let colorBtn = document.querySelector('#color')
 let rainbowBtn = document.querySelector('#rainbow')
 let eraseBtn = document.querySelector('#erase')
 let clear = document.querySelector('#clean')
+let colorCircle = document.querySelector('#colorcircle')
+
 
 colorBtn.addEventListener('click', function onClick(event) {
-     event.target.style.backgroundColor = 'gray';
+     event.target.style.backgroundColor = '#313131';
      event.target.style.color = 'white';
      event.target.style.borderColor = 'white';
 })
 
 rainbowBtn.addEventListener('click', function onClick(event) {
-    event.target.style.backgroundColor = 'gray';
+    event.target.style.backgroundColor = '#313131';
     event.target.style.color = 'white';
     event.target.style.borderColor = 'white';
 })
 
 eraseBtn.addEventListener('click', function onClick(event) {
-    event.target.style.backgroundColor = 'gray';
+    event.target.style.backgroundColor = '#313131';
     event.target.style.color = 'white';
     event.target.style.borderColor = 'white';
 })
 
 clear.addEventListener('click', function onClick(event) {
-    event.target.style.backgroundColor = 'gray';
+    event.target.style.backgroundColor = '#313131';
     event.target.style.color = 'white';
     event.target.style.borderColor = 'white';
 })
