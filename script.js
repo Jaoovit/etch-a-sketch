@@ -18,23 +18,33 @@ slideControl()
 
 function incriseSquare(size) {
     let grid = document.querySelector('#grid');
+    let colorSquare = document.querySelector('#colorsquare');
+
     grid.style.gridTemplateRows = `repeat(${size}, 1fr)`;
     grid.style.gridTemplateColumns = `repeat(${size}, 1fr)`;
 
+    
+
     for (let i = 0; i < size * size; i++) {
             let cell = document.createElement('div');
-            cell.classList.add('cell')
-            cell.setAttribute('id', 'cell')
+            cell.classList.add('cell');
+            cell.setAttribute('id', 'cell');
             grid.appendChild(cell);
+            console.log(cell)
+            cell.addEventListener('click', function onClick(event) {
+                event.target.style.backgroundColor = colorSquare.value;
+            })
         }
     }
+
+incriseSquare()
+
 
 let colorBtn = document.querySelector('#color')
 let rainbowBtn = document.querySelector('#rainbow')
 let eraseBtn = document.querySelector('#erase')
 let clear = document.querySelector('#clean')
-let colorCircle = document.querySelector('#colorcircle')
-let cell = document.querySelector('#cell')
+
 
 
 colorBtn.addEventListener('click', function onClick(event) {
@@ -46,9 +56,9 @@ colorBtn.addEventListener('click', function onClick(event) {
      eraseBtn.style = ""
      clear.style = ""
      
-
-     cell.style.backgroundColor = '#313131';
 })
+
+
 
 rainbowBtn.addEventListener('click', function onClick(event) {
     event.target.style.backgroundColor = '#313131';
