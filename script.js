@@ -58,24 +58,14 @@ function incriseSquare(size) {
         clear.style = ""
    })
    
-   clear.addEventListener('click', function onClick(event) {
-       event.target.style.backgroundColor = '#313131';
-       event.target.style.color = 'white';
-       event.target.style.borderColor = 'white';
    
-        rainbowBtn.style = ""
-        eraseBtn.style = ""
-        colorBtn.style = ""
-   })
-   
+
     function squareBehavior() {
         if (colorBtn.style.backgroundColor == 'rgb(49, 49, 49)') {
             return colorSquare.value
         } else if (rainbowBtn.style.backgroundColor == 'rgb(49, 49, 49)') {
             return ''
         } else if (eraseBtn.style.backgroundColor == 'rgb(49, 49, 49)') {
-            return ''
-        } else if (clear.style.backgroundColor == 'rgb(49, 49, 49)') {
             return ''
         }
     }
@@ -90,6 +80,19 @@ function incriseSquare(size) {
             grid.appendChild(cell);
             cell.addEventListener('click', function onClick(event) {
                 event.target.style.backgroundColor = squareBehavior();
+
+                clear.addEventListener('click', function onClick(event) {
+                    event.target.style.backgroundColor = '#313131';
+                    event.target.style.color = 'white';
+                    event.target.style.borderColor = 'white';
+                    
+                     rainbowBtn.style = ""
+                     eraseBtn.style = ""
+                     colorBtn.style = ""
+                     cell.style = ""
+                     
+                })
+                
             })
         }
     }
