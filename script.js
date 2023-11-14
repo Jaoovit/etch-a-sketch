@@ -58,13 +58,24 @@ function incriseSquare(size) {
         clear.style = ""
    })
    
-   
+    function randomRGB() {
+        let randomR = randomNumber()
+        let randomG = randomNumber()
+        let randomB = randomNumber()
+
+        return `rgb(${randomR}, ${randomG}, ${randomB})`
+    }
+    
+    function assignRandomColorToElement(element) {
+          element.backgroundColor = randomRGB
+    }
+
 
     function squareBehavior() {
         if (colorBtn.style.backgroundColor == 'rgb(49, 49, 49)') {
             return colorSquare.value
         } else if (rainbowBtn.style.backgroundColor == 'rgb(49, 49, 49)') {
-            return ''
+            return assignRandomColorToElement()
         } else if (eraseBtn.style.backgroundColor == 'rgb(49, 49, 49)') {
             return ''
         }
