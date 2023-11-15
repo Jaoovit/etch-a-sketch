@@ -19,7 +19,7 @@ pseudocode: Create a etch-a-sketch to draw using single or random colors.
 
 3 - Create a JavaScript document with:
     a function to add divis in the main div using the 5º button [x]
-    a function to paint a square with a selection color
-    a function to paint a square with a random color
-    a funtion to paint a square to white
-    a funtion to change the color of all square to white
+    a function to paint a square with a selection color [x]
+    a function to paint a square with a random color [x]
+    a funtion to paint a square to white [x]
+    a funtion to change the color of all square to white [x]
