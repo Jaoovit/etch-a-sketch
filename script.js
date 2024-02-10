@@ -24,6 +24,7 @@ slideControl()
     let eraseBtn = document.querySelector('#erase');
     let clear = document.querySelector('#clean');
 
+
 // The three addEventListener 'click' is used to change the button design when user click
 
     colorBtn.addEventListener('click', function onClick(event) {

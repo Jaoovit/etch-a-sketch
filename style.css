@@ -67,4 +67,6 @@ button {
     height: 300px;
     width: 300px;
     box-shadow: 5px 5px 2px gray;
+    grid-template-rows: repeat(16, 1fr);
+    grid-template-columns: repeat(16, 1fr);
 }
