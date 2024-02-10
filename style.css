@@ -1,6 +1,14 @@
 body {
     background-color: rgb(216, 216, 216);
-    color: rgb(49, 49, 49)
+    color: rgb(49, 49, 49);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+a {
+    color: rgb(49, 49, 49);
+    text-decoration: none;
 }
 
 h1 {
@@ -12,12 +20,10 @@ h1 {
 }
 
 footer {
-    text-align:center;
-    position: end;
-    bottom: 0;
-    width: 100%;
-    height: 2.5rem;
-    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    text-align:flex-end;
+    margin-top: auto;
 }
 
 button {
