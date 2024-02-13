@@ -1,5 +1,5 @@
 // Funtion to inscrise the slide value on the user interface (1 X 1, 5 X 5, 16 X 16)
-
+/*
 function slideControl() {
     let slide = document.querySelector('#slide');
     let show = document.querySelector('#show');
@@ -15,7 +15,7 @@ function slideControl() {
     
 }
 
-slideControl()
+slideControl()*/
 
     let grid = document.querySelector('#grid');
     let colorSquare = document.querySelector('#colorsquare');
@@ -82,9 +82,10 @@ slideControl()
     }
 
 
+/*
     function incriseSquare(size) {
-    /*gridTemplateRows and gridTemplateColumns control the bahavior of squares inside
-    the CSS grid, using the parametre 'size'*/
+    //gridTemplateRows and gridTemplateColumns control the bahavior of squares inside
+    //the CSS grid, using the parametre 'size'
     grid.style.gridTemplateRows = `repeat(${size}, 1fr)`;
     grid.style.gridTemplateColumns = `repeat(${size}, 1fr)`;
 
@@ -112,18 +113,4 @@ slideControl()
             })
         }
     }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+*/

@@ -1,7 +1,7 @@
 body {
     background-color: rgb(216, 216, 216);
     color: rgb(49, 49, 49);
-    min-height: 100vh;
+    min-height: 95vh;
     display: flex;
     flex-direction: column;
 }
@@ -69,4 +69,9 @@ button {
     box-shadow: 5px 5px 2px gray;
     grid-template-rows: repeat(16, 1fr);
     grid-template-columns: repeat(16, 1fr);
+}
+
+.squarsizechoice {
+    display: flex;
+    flex-direction: column;
 }

@@ -20,7 +20,25 @@
             <button id="erase" class="erase">Erase</button>
             <button id="clean" class="clean">Clean</button>
             <div id="show"></div>
-            <input id="slide" type="range" class="slide" min="1" max="64" step="1" value="16">
+            <!-- <input id="slide" type="range" class="slide" min="1" max="64" step="1" value="16"> -->
+            <div class="squarsizechoice">
+                <div class="firstchoice">
+                    <input type="radio" id="4x4">
+                    <label for="4x4">4x4</label>
+                </div>
+                <div class="secondchoice">
+                    <input type="radio" id="16x16">
+                    <label for="16x16">16x16</label>
+                </div>
+                <div class="thirdchoice">
+                    <input type="radio" id="32x32">
+                    <label for="32x32">32x32</label>
+                </div>
+                <div class="lastchoice">
+                    <input type="radio" id="64x64">
+                    <label for="64x64">64x64</label>
+                </div>
+            </div>
         </div>
         <div id="grid" class="grid" value="#313131"></div>
     </section>
