@@ -1,5 +1,5 @@
 // Funtion to inscrise the slide value on the user interface (1 X 1, 5 X 5, 16 X 16)
-/*
+
 function slideControl() {
     let slide = document.querySelector('#slide');
     let show = document.querySelector('#show');
@@ -15,7 +15,8 @@ function slideControl() {
     
 }
 
-slideControl()*/
+slideControl()
+
 
     let grid = document.querySelector('#grid');
     let colorSquare = document.querySelector('#colorsquare');
@@ -81,6 +82,112 @@ slideControl()*/
         
     }
 
+    for (let i = 0; i < 16 * 16; i++) {
+        let cell = document.createElement('div');
+        cell.classList.add('cell');
+        cell.setAttribute('id', 'cell');
+        grid.appendChild(cell);
+        cell.addEventListener('click', function onClick(event) {
+            event.target.style.backgroundColor = squareBehavior();
+
+            clear.addEventListener('click', function onClick(event) {
+                event.target.style.backgroundColor = '#313131';
+                event.target.style.color = 'white';
+                event.target.style.borderColor = 'white';
+                
+                 rainbowBtn.style = ""
+                 eraseBtn.style = ""
+                 colorBtn.style = ""
+                 cell.style = ""
+                 
+            })
+            
+        })
+    }
+
+
+    function incriseSquare(size) {
+        //gridTemplateRows and gridTemplateColumns control the bahavior of squares inside
+        //the CSS grid, using the parametre 'size'
+        grid.innerHTML = '';
+        grid.style.gridTemplateRows = `repeat(${size}, 1fr)`;
+        grid.style.gridTemplateColumns = `repeat(${size}, 1fr)`;
+    
+        //This for get the incriseSquare value to gerate squares on the grid
+        for (let i = 0; i < size * size; i++) {
+                let cell = document.createElement('div');
+                cell.classList.add('cell');
+                cell.setAttribute('id', 'cell');
+                grid.appendChild(cell);
+                cell.addEventListener('click', function onClick(event) {
+                    event.target.style.backgroundColor = squareBehavior();
+    
+                    clear.addEventListener('click', function onClick(event) {
+                        event.target.style.backgroundColor = '#313131';
+                        event.target.style.color = 'white';
+                        event.target.style.borderColor = 'white';
+                        
+                         rainbowBtn.style = ""
+                         eraseBtn.style = ""
+                         colorBtn.style = ""
+                         cell.style = ""
+                         
+                    })
+                    
+                })
+            }
+        }
+
+
+/*
+    function incriseSquare(size) {
+        //gridTemplateRows and gridTemplateColumns control the bahavior of squares inside
+        //the CSS grid, using the parametre 'size'
+        grid.innerHTML = '';
+        grid.style.gridTemplateRows = `repeat(${size}, 1fr)`;
+        grid.style.gridTemplateColumns = `repeat(${size}, 1fr)`;
+    
+        //This for get the incriseSquare value to gerate squares on the grid
+        for (let i = 0; i < size * size; i++) {
+                
+                let cell = document.createElement('div');
+                cell.classList.add('cell');
+                cell.setAttribute('id', 'cell');
+                grid.appendChild(cell);
+                cell.addEventListener('click', function onClick(event) {
+                    event.target.style.backgroundColor = squareBehavior();
+    
+                    clear.addEventListener('click', function onClick(event) {
+                        event.target.style.backgroundColor = '#313131';
+                        event.target.style.color = 'white';
+                        event.target.style.borderColor = 'white';
+                        
+                         rainbowBtn.style = ""
+                         eraseBtn.style = ""
+                         colorBtn.style = ""
+                         cell.style = ""
+                         
+                    })
+                    
+                })
+            }
+        }
+
+        let firstchoice = document.querySelector('#four')
+        let secondchoice = document.querySelector('#eight')
+        let thirdchoice = document.querySelector('#sixteen')
+        let fourthchoice = document.querySelector('#thirtytwo')
+        let lastchoice = document.querySelector('#sixtyfour')
+        
+        firstchoice.addEventListener('input', chooseSize)
+        secondchoice.addEventListener('input', chooseSize)
+        thirdchoice.addEventListener('input', chooseSize)
+        fourthchoice.addEventListener('input', chooseSize)
+        lastchoice.addEventListener('input', chooseSize)
+
+        function chooseSize(e){
+    incriseSquare(e.target.value)
+}
 
 /*
     function incriseSquare(size) {
