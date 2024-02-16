@@ -22,7 +22,7 @@ h1 {
 footer {
     display: flex;
     justify-content: center;
-    text-align:flex-end;
+    text-align: flex-end;
     margin-top: auto;
 }
 
