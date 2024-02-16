@@ -82,13 +82,21 @@ slideControl()
         
     }
 
+    //let isPressed = false
+    //console.log(isPressed)
+    
     for (let i = 0; i < 16 * 16; i++) {
+        //console.log(isPressed)
         let cell = document.createElement('div');
         cell.classList.add('cell');
         cell.setAttribute('id', 'cell');
         grid.appendChild(cell);
-        cell.addEventListener('click', function onClick(event) {
+        //cell.addEventListener('mousedown', () => {isPressed = true});
+        //cell.addEventListener('mouseup', () => {isPressed = false});
+        //if (isPressed == true) {
+        cell.addEventListener('mousemove', function onmousemove(event) {
             event.target.style.backgroundColor = squareBehavior();
+        
 
             clear.addEventListener('click', function onClick(event) {
                 event.target.style.backgroundColor = '#313131';
@@ -102,9 +110,8 @@ slideControl()
                  
             })
             
-        })
-    }
-
+        } ) }
+    //}
 
     function incriseSquare(size) {
         //gridTemplateRows and gridTemplateColumns control the bahavior of squares inside
@@ -119,7 +126,7 @@ slideControl()
                 cell.classList.add('cell');
                 cell.setAttribute('id', 'cell');
                 grid.appendChild(cell);
-                cell.addEventListener('click', function onClick(event) {
+                cell.addEventListener('mousemove', function mousemove(event) {
                     event.target.style.backgroundColor = squareBehavior();
     
                     clear.addEventListener('click', function onClick(event) {
@@ -138,7 +145,7 @@ slideControl()
             }
         }
 
-
+        
 /*
     function incriseSquare(size) {
         //gridTemplateRows and gridTemplateColumns control the bahavior of squares inside
